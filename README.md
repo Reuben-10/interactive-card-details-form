@@ -27,8 +27,8 @@ The task is to build an interactive card details form where users can fill in th
 
 ### Links
 
-- Solution URL: []()
-- Live Site URL: []()
+- Solution URL: [GitHub Repository](https://github.com/Reuben-10/interactive-card-details-form)
+- Live Site URL: [Live Demo on Vercel](https://interactive-card-details-form-reuben.vercel.app/)
 
 ## My process
 
