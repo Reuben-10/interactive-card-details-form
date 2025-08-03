@@ -1,69 +1,68 @@
-# React + TypeScript + Vite
+# Frontend Mentor - Interactive Card Details Form Solution
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is part of the Frontend Mentor challenges and was assigned by AltSchool to enhance my practical skills in web development. This particular challenge helps me get accustomed to using TypeScript.
 
-Currently, two official plugins are available:
+## Table of contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
 
-## Expanding the ESLint configuration
+## Overview
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### The challenge
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+The task is to build an interactive card details form where users can fill in their card details and see real-time updates. Error messages should appear if fields are empty or invalid. The layout must be responsive and should display interactive states like hover and focus.
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+### Screenshot
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+![Screenshot of the solution](public/screenshot.png)
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Links
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- Solution URL: []()
+- Live Site URL: []()
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## My process
+
+### Built with
+
+- Semantic HTML5
+- CSS custom properties, Flexbox, and Grid
+- Mobile-first workflow
+- [React](https://reactjs.org/) - A JavaScript library for building user interfaces
+- [TypeScript](https://www.typescriptlang.org/) - Typed JavaScript at Any Scale
+- [Vite](https://vitejs.dev/) - A fast build tool and development server
+
+This project helps me familiarize myself with TypeScript by applying strong typing to build a maintainable codebase. It also reinforces modern frontend practices by using React and Vite, ensuring efficiency and optimal performance in development.
+
+### What I learned
+
+The project allowed me to deepen my understanding of handling form validation and dynamic updates with TypeScript and React. The implementation of type safety prevents common errors and enhances code maintainability.
+
+### Continued development
+
+I plan to focus more on integrating TypeScript with various libraries and frameworks to solidify my understanding of type-safe development.
+
+### Useful resources
+
+- [**The TypeScript Handbook**](https://www.typescriptlang.org/docs/handbook/intro.html) – This has been my main reference for understanding the core concepts of TypeScript. I often revisit it whenever I need clarity on fundamentals.
+
+- [**React TypeScript Cheatsheets**](https://react-typescript-cheatsheet.netlify.app/) – I use this a lot when working with React projects. It gives me quick examples and patterns that make my development process smoother.
+
+- [**Total TypeScript**](https://www.totaltypescript.com/) – A great platform with interactive tutorials and practical examples for learning and improving TypeScript skills.
+
+
+
+## Author
+- Frontend Mentor - [@Reuben-10](https://www.frontendmentor.io/profile/Reuben-10)
+- Twitter - [@reuben_agbor](https://twitter.com/yourusername)
+- GitHub - [@Reuben-10](https://github.com/Reuben-10)
+
