@@ -12,17 +12,16 @@ const CardDisplay: React.FC<CardDisplayProps> = ({ data }) => {
     const cvc = data.cvc || "000";
 
     return (
-        <div className="relative w-full max-w-sm mx-auto min-h-[300px] lg:min-h-0 h-screen flex">
+        <div className="relative w-full max-w-sm mx-auto min-h-[300px] lg:min-h-0 xs:mb-4 md:mb-10 flex">
             {/* Front of Card */}
             <div
-                className="w-[340px] h-[190px] bg-cover bg-no-repeat rounded-xl text-white p-6 absolute top-40 left-10 z-10 flex flex-col justify-end"
+                className="md:w-[340px] w-full h-[190px] bg-cover bg-no-repeat rounded-xl text-white p-6 absolute top-35 lg:top-40 lg:left-10 right-2 z-10 flex flex-col justify-end"
                 style={{
-                    backgroundImage: "url('src/assets/images/bg-card-front.png')",
+                    backgroundImage: "url('/assets/images/bg-card-front.png')",
                 }}
             >
-                <div className="flex gap-3 mb-8">
-                    <div className="w-8 h-8 bg-white rounded-full"></div>
-                    <div className="w-4 h-4 border border-white rounded-full mt-2"></div>
+                <div className="mb-8">
+                    <img src="/assets/images/card-logo.svg" alt="card-logo" />
                 </div>
                 <div className="text-lg tracking-widest font-light mb-6">
                     {cardNumber}
@@ -35,9 +34,9 @@ const CardDisplay: React.FC<CardDisplayProps> = ({ data }) => {
 
             {/* Back of Card */}
             <div
-                className="w-[340px] h-[190px] bg-cover bg-no-repeat rounded-xl absolute top-95 left-20 z-0 flex items-center justify-end pr-10 text-sm tracking-widest text-white"
+                className="md:w-[340px] w-full h-[190px] bg-cover bg-no-repeat rounded-xl absolute top-4 lg:top-95 lg:left-20 left-2 md:left-20 z-0 flex items-center justify-end pr-10 text-sm tracking-widest text-white"
                 style={{
-                    backgroundImage: "url('src/assets/images/bg-card-back.png')",
+                    backgroundImage: "url('/assets/images/bg-card-back.png')",
                 }}
             >
                 {cvc}

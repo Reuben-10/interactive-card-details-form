@@ -72,9 +72,9 @@ const CreditCardForm: React.FC = () => {
   };
 
   return (
-    <div className="w-full min-h-screen flex flex-col lg:flex-row items-center lg:items-center justify-center gap-12 px-4 py-8">
+    <div className="w-full min-h-screen flex flex-col lg:flex-row items-center lg:items-center lg:justify-center gap-12 px-4 py-8">
       {/* Card Display */}
-      <div className="w-full lg:w-[40%] flex justify-center lg:justify-end">
+      <div className="w-full lg:w-[40%] flex justify-center lg:justify-end lg:min-h-screen">
         <CardDisplay data={formData} />
       </div>
 
